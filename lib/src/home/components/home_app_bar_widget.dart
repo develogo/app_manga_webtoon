@@ -21,7 +21,7 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
               children: [
                 const CircleAvatar(
                   radius: 24,
-                  child: Icon(Icons.person),
+                  child: Icon(Icons.person_outline_outlined),
                 ),
                 const SizedBox(width: 8),
                 Column(
@@ -50,12 +50,12 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
             Row(
               children: const [
                 Icon(
-                  Icons.notifications,
+                  Icons.search,
                   color: Colors.white,
                 ),
                 SizedBox(width: 8),
                 Icon(
-                  Icons.settings,
+                  Icons.notifications_none,
                   color: Colors.white,
                 ),
               ],
