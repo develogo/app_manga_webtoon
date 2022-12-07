@@ -38,6 +38,7 @@ class BottomBarWidget extends StatelessWidget {
                       icon: Icon(e.icon),
                       onPressed: e.onTap,
                       color: Colors.white,
+                      splashRadius: 24.0,
                     ),
                   ))
               .toList(),

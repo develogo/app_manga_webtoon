@@ -75,15 +75,15 @@ class _HomePageState extends State<HomePage> {
           BottomBarWidget(
             items: [
               BottomBarItem(
-                icon: Icons.verified_user_outlined,
+                icon: Icons.home_outlined,
                 onTap: () {},
               ),
               BottomBarItem(
-                icon: Icons.verified_user_outlined,
+                icon: Icons.favorite_border,
                 onTap: () {},
               ),
               BottomBarItem(
-                icon: Icons.verified_user_outlined,
+                icon: Icons.explore_outlined,
                 onTap: () {},
               ),
             ],
