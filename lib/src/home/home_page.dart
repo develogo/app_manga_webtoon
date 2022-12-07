@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:manga_webtoon/src/home/components/bottom_bar_widget.dart';
 import 'package:manga_webtoon/src/home/components/carousel_widget.dart';
 import 'package:manga_webtoon/src/home/components/home_app_bar_widget.dart';
+import 'package:manga_webtoon/src/home/components/most_popular_card_widget.dart';
+
+import 'components/cart_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,8 +16,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: HomeAppBar(),
+      appBar: const HomeAppBar(),
       body: Stack(
         alignment: Alignment.center,
         children: [
@@ -22,52 +26,60 @@ class _HomePageState extends State<HomePage> {
             children: [
               CarouselWidget(
                 title: "Most Popular",
-                children: [
-                  Container(
-                    color: Colors.red,
-                    width: 355,
+                height: size.height * 0.26,
+                children: const [
+                  MostPopularCardWidget(
+                    imageUrl: 'assets/images/most_popular1.png',
+                    title: 'One Piece',
+                    chapters: 1067,
+                    rating: 7.9,
                   ),
-                  const SizedBox(
-                    width: 4,
+                  MostPopularCardWidget(
+                    imageUrl: 'assets/images/most_popular2.png',
+                    title: 'Haikyuu',
+                    chapters: 1067,
+                    rating: 7.9,
                   ),
-                  Container(
-                    color: Colors.red,
-                    width: 355,
-                  )
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 24),
               CarouselWidget(
-                title: 'Recent Release',
-                children: [
-                  Container(
-                    color: Colors.red,
-                    width: 355,
+                title: "Recent Release",
+                height: size.height * 0.26,
+                onSeeMore: () {},
+                children: const [
+                  CardWidget(
+                    imageUrl: 'assets/images/recent1.png',
+                    title: 'Jujutsu Kiasen',
                   ),
-                  const SizedBox(
-                    width: 4,
+                  CardWidget(
+                    imageUrl: 'assets/images/recent2.png',
+                    title: 'My Hero Academia',
                   ),
-                  Container(
-                    color: Colors.red,
-                    width: 355,
-                  )
+                  CardWidget(
+                    imageUrl: 'assets/images/recent3.png',
+                    title: 'Solo Leveling',
+                  ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 24),
               CarouselWidget(
-                title: "Most Popular",
-                children: [
-                  Container(
-                    color: Colors.red,
-                    width: 355,
+                title: "Coming Soon",
+                height: size.height * 0.26,
+                onSeeMore: () {},
+                children: const [
+                  CardWidget(
+                    imageUrl: 'assets/images/coming_soon1.png',
+                    title: 'Jujutsu Kiasen',
                   ),
-                  const SizedBox(
-                    width: 4,
+                  CardWidget(
+                    imageUrl: 'assets/images/coming_soon2.png',
+                    title: 'My Hero Academia',
                   ),
-                  Container(
-                    color: Colors.red,
-                    width: 355,
-                  )
+                  CardWidget(
+                    imageUrl: 'assets/images/coming_soon3.png',
+                    title: 'Solo Leveling',
+                  ),
                 ],
               ),
             ],

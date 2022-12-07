@@ -16,7 +16,7 @@ class BottomBarWidget extends StatelessWidget {
     return Positioned(
       bottom: 16,
       child: Container(
-        height: 64,
+        height: 56,
         width: size.width * .8,
         decoration: BoxDecoration(
           color: AppColor.primary,

@@ -39,9 +39,9 @@ class CarouselWidget extends StatelessWidget {
               if (onSeeMore != null)
                 GestureDetector(
                   onTap: onSeeMore,
-                  child: Text(
-                    title,
-                    style: const TextStyle(
+                  child: const Text(
+                    'See more',
+                    style: TextStyle(
                       fontSize: 12,
                       color: AppColor.primary,
                     ),
@@ -53,8 +53,11 @@ class CarouselWidget extends StatelessWidget {
         const SizedBox(height: 8),
         SizedBox(
           height: height,
-          child: ListView.builder(
+          child: ListView.separated(
             physics: const BouncingScrollPhysics(),
+            separatorBuilder: (BuildContext context, int index) {
+              return const SizedBox(width: 16);
+            },
             padding: const EdgeInsets.only(left: 16),
             scrollDirection: Axis.horizontal,
             itemCount: children.length,
