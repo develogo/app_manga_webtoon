@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:manga_webtoon/common/theme/app_theme.dart';
 import 'package:manga_webtoon/src/home/home_page.dart';
 
+import 'common/routes/routers.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,10 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: AppTheme().lightTheme,
-      home: const HomePage(),
+      routerConfig: router,
     );
   }
 }

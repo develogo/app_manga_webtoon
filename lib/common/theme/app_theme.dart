@@ -5,7 +5,7 @@ import 'package:manga_webtoon/common/theme/colors/app_colors.dart';
 class AppTheme {
   ThemeData get lightTheme => ThemeData(
         brightness: Brightness.light,
-        scaffoldBackgroundColor: const Color(0xFF171717),
+        scaffoldBackgroundColor: AppColor.darkColor,
         primarySwatch: AppColor.primary,
         // backgroundColor: AppColor.primary,
         // colorScheme: const ColorScheme.light(

@@ -22,4 +22,6 @@ class AppColor {
   static const int _rValue = 218;
   static const int _gValue = 0;
   static const int _bValue = 55;
+
+  static const Color darkColor = Color(0xFF171717);
 }
