@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:manga_webtoon/common/theme/app_theme.dart';
-import 'package:manga_webtoon/src/home/home_page.dart';
 
 import 'common/routes/routers.dart';
 

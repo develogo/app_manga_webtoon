@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:manga_webtoon/src/detail/components/detail_header_widget.dart';
 
-class DetailPage extends StatefulWidget {
+class DetailPageArguments {
   final String urlImage;
+  final String title;
+  final String synopsis;
+
+  DetailPageArguments({
+    required this.urlImage,
+    required this.title,
+    required this.synopsis,
+  });
+}
+
+class DetailPage extends StatefulWidget {
+  final DetailPageArguments arguments;
 
   const DetailPage({
     super.key,
-    this.urlImage = 'assets/images/most_popular1.png',
+    required this.arguments,
   });
 
   @override
@@ -20,9 +32,9 @@ class _DetailPageState extends State<DetailPage> {
         body: Column(
       children: [
         DetailHeaderWidget(
-          urlImage: widget.urlImage,
-          title: 'Manga Title',
-          synopsis: 'Manga Synopsis',
+          urlImage: widget.arguments.urlImage,
+          title: widget.arguments.title,
+          synopsis: widget.arguments.synopsis,
         ),
       ],
     ));

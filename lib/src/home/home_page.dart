@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:manga_webtoon/src/detail/detail_page.dart';
 import 'package:manga_webtoon/src/home/components/bottom_bar_widget.dart';
 import 'package:manga_webtoon/src/home/components/carousel_widget.dart';
 import 'package:manga_webtoon/src/home/components/home_app_bar_widget.dart';
@@ -34,14 +35,28 @@ class _HomePageState extends State<HomePage> {
                     title: 'One Piece',
                     chapters: 1067,
                     rating: 7.9,
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'One Piece',
+                        synopsis: '',
+                        urlImage: 'assets/images/most_popular1.png',
+                      ),
+                    ),
                   ),
                   MostPopularCardWidget(
                     imageUrl: 'assets/images/most_popular2.png',
                     title: 'Haikyuu',
                     chapters: 1067,
                     rating: 7.9,
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'Haikyuu',
+                        synopsis: '',
+                        urlImage: 'aassets/images/most_popular2.png',
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -54,17 +69,38 @@ class _HomePageState extends State<HomePage> {
                   CardWidget(
                     imageUrl: 'assets/images/recent1.png',
                     title: 'Jujutsu Kiasen',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'Jujutsu Kiasen',
+                        synopsis: '',
+                        urlImage: 'assets/images/recent1.png',
+                      ),
+                    ),
                   ),
                   CardWidget(
                     imageUrl: 'assets/images/recent2.png',
                     title: 'My Hero Academia',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'My Hero Academia',
+                        synopsis: '',
+                        urlImage: 'assets/images/recent2.png',
+                      ),
+                    ),
                   ),
                   CardWidget(
                     imageUrl: 'assets/images/recent3.png',
                     title: 'Solo Leveling',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'Solo Leveling',
+                        synopsis: '',
+                        urlImage: 'assets/images/recent3.png',
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -77,17 +113,38 @@ class _HomePageState extends State<HomePage> {
                   CardWidget(
                     imageUrl: 'assets/images/coming_soon1.png',
                     title: 'Jujutsu Kiasen',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'Jujutsu Kiasen',
+                        synopsis: '',
+                        urlImage: 'assets/images/coming_soon1.png',
+                      ),
+                    ),
                   ),
                   CardWidget(
                     imageUrl: 'assets/images/coming_soon2.png',
                     title: 'My Hero Academia',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'My Hero Academia',
+                        synopsis: '',
+                        urlImage: 'assets/images/coming_soon2.png',
+                      ),
+                    ),
                   ),
                   CardWidget(
                     imageUrl: 'assets/images/coming_soon3.png',
                     title: 'Solo Leveling',
-                    onTap: () => onTapCard(context),
+                    onTap: () => onTapCard(
+                      context,
+                      arguments: DetailPageArguments(
+                        title: 'Solo Leveling',
+                        synopsis: '',
+                        urlImage: 'assets/images/coming_soon3.png',
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -114,7 +171,9 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void onTapCard(BuildContext context) {
-    GoRouter.of(context).push('/detail');
-  }
+  void onTapCard(
+    BuildContext context, {
+    required DetailPageArguments arguments,
+  }) =>
+      context.pushNamed('detail', extra: arguments);
 }

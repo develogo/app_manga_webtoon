@@ -147,7 +147,7 @@ class DetailHeaderWidget extends StatelessWidget {
                       shape: const CircleBorder(),
                       child: IconButton(
                         icon: const Icon(Icons.arrow_back),
-                        onPressed: () => GoRouter.of(context).pop(),
+                        onPressed: () => context.pop(),
                         color: Colors.white,
                       ),
                     ),
@@ -158,7 +158,7 @@ class DetailHeaderWidget extends StatelessWidget {
                           shape: const CircleBorder(),
                           child: IconButton(
                             icon: const Icon(Icons.favorite_outline),
-                            onPressed: () => GoRouter.of(context).pop(),
+                            onPressed: () => context.pop(),
                             color: Colors.white,
                           ),
                         ),
@@ -167,7 +167,7 @@ class DetailHeaderWidget extends StatelessWidget {
                           shape: const CircleBorder(),
                           child: IconButton(
                             icon: const Icon(Icons.share_outlined),
-                            onPressed: () => GoRouter.of(context).pop(),
+                            onPressed: () => context.pop(),
                             color: Colors.white,
                           ),
                         ),
