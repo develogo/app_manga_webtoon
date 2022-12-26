@@ -1,6 +1,6 @@
 
 <p align="center">
- <img width="100" src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/most_popular1.png" align="center" alt="GitHub Readme Stats" />
+ <img width="100" src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/images/most_popular1.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Manga & Webtoon</h2>
  <p align="center">Manga & Webtoon App
 
@@ -14,7 +14,7 @@
 
 
 <p>
-<img src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/most_popular1.png" alt="Logo" width="400" />
+<img src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/images/most_popular1.png" alt="Logo" width="400" />
 </a>
 
 Application built in Flutter based on [Design](https://www.figma.com/community/file/1178648400060263277).<br />
