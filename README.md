@@ -1,16 +1,37 @@
-# manga_webtoon
 
-A new Flutter project.
+<p align="center">
+ <img width="100" src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/most_popular1.png" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">Manga & Webtoon</h2>
+ <p align="center">Manga & Webtoon App
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+  <p align="center">
+    <a href="#demo">App demo</a>
+  </p>  
+</p>
+<p align="center">Love the project? Give me a star!
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p>
+<img src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/most_popular1.png" alt="Logo" width="400" />
+</a>
+
+Application built in Flutter based on [Design](https://www.figma.com/community/file/1178648400060263277).<br />
+</p>
+
+
+# Demo
+
+
+<img src="https://raw.githubusercontent.com/develogo/app_manga_webtoon/main/assets/screens/demo.png" width="800"/> 
+
+
+
+---
+Contributions are welcome! <3
+
+Made with :heart: and Flutter.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
