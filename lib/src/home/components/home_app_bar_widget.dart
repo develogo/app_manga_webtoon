@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-
 import '../../../common/theme/colors/app_colors.dart';
 
-class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
-  const HomeAppBar({
-    super.key,
-  });
+class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const HomeAppBar({Key? key}) : super(key: key);
+
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
-
   @override
   Widget build(BuildContext context) {
     return Container(
